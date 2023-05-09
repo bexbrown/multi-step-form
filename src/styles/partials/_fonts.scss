@@ -1,0 +1,14 @@
+$font-stack: "Ubuntu";
+
+//regular
+@font-face {
+    font-family: $font-stack;
+    src: url("../../assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
+//bold
+@font-face {
+    font-family: $font-stack;
+    src: url("../../assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
