@@ -1,14 +1,17 @@
 import "./Card.scss";
-import CardNav from '../CardNav/CardNav';
+import CardHeader from '../CardHeader/CardHeader';
 import CardContent from '../CardContent/CardContent';
 import CardFooter from '../CardFooter/CardFooter';
+import { useState } from 'react';
 
 function Card() {
+
+    const [step, setStep] = useState(1);
     return (
         <div>
-            <CardNav />
-            <CardContent />
-            <CardFooter />
+            <CardHeader />
+            <CardContent step={step} />
+            <CardFooter setStep={setStep} step={step} />
         </div>
     )
 }

@@ -1,6 +1,6 @@
-import './CardNav.scss';
+import './CardHeader.scss';
 
-function CardNav() {
+function CardHeader() {
     return (
         <div>
             {/*mobile*/}
@@ -42,4 +42,4 @@ function CardNav() {
     )
 }
 
-export default CardNav;
+export default CardHeader;

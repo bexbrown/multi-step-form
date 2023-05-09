@@ -1,10 +1,19 @@
 import "./CardFooter.scss";
 
-function CardFooter() {
+function CardFooter({ setStep, step }) {
+
+    function handleBackButton() {
+        setStep(step - 1);
+    }
+
+    function handleNextButton() {
+        setStep(step + 1);
+    }
+
     return (
         <div>
-            <button>Go Back</button>
-            <button>Next Step</button>
+            {(step > 1 && step < 5) && <button onClick={handleBackButton} >Go Back</button>}
+            {step < 5 && <button onClick={handleNextButton}>Next Step</button>}
         </div>
     )
 }
