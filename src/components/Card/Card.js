@@ -22,11 +22,13 @@ function Card() {
     return (
         <div className="card">
             <CardHeader />
-            <CardContent step={step} setStep={setStep} paymentSchedule={paymentSchedule}
-                setPaymentSchedule={setPaymentSchedule} plan={plan} setPlan={setPlan} price={price} setPrice={setPrice} name={name} setName={setName}
-                email={email} setEmail={setEmail} phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber}
-                addOn1={addOn1} setAddOn1={setAddOn1} addOn2={addOn2} setAddOn2={setAddOn2} addOn3={addOn3} setAddOn3={setAddOn3} />
-            <CardFooter setStep={setStep} step={step} />
+            <div className="card__div">
+                <CardContent step={step} setStep={setStep} paymentSchedule={paymentSchedule}
+                    setPaymentSchedule={setPaymentSchedule} plan={plan} setPlan={setPlan} price={price} setPrice={setPrice} name={name} setName={setName}
+                    email={email} setEmail={setEmail} phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber}
+                    addOn1={addOn1} setAddOn1={setAddOn1} addOn2={addOn2} setAddOn2={setAddOn2} addOn3={addOn3} setAddOn3={setAddOn3} className="card__content" />
+                <CardFooter setStep={setStep} step={step} className="card__footer" />
+            </div>
         </div>
     )
 }

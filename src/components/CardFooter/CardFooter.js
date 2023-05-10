@@ -11,7 +11,7 @@ function CardFooter({ setStep, step }) {
     }
 
     return (
-        <div>
+        <div className="footer">
             {(step > 1 && step < 5) && <button onClick={handleBackButton} >Go Back</button>}
             {step < 5 && <button onClick={handleNextButton}>Next Step</button>}
         </div>
