@@ -1,0 +1,20 @@
+@use "../../styles/partials/mixins" as *;
+
+.header {
+    background-image: url(../../assets/images/bg-sidebar-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFF;
+    display: flex;
+
+    @include tablet {
+        flex-direction: column;
+        background-image: url(../../assets//images/bg-sidebar-desktop.svg);
+        height: 100vh;
+        background-position: left;
+    }
+
+    // &__1 {
+    //     margin-top: 7rem;
+    // }
+}

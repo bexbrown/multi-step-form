@@ -20,7 +20,7 @@ function Card() {
 
 
     return (
-        <div>
+        <div className="card">
             <CardHeader />
             <CardContent step={step} setStep={setStep} paymentSchedule={paymentSchedule}
                 setPaymentSchedule={setPaymentSchedule} plan={plan} setPlan={setPlan} price={price} setPrice={setPrice} name={name} setName={setName}
