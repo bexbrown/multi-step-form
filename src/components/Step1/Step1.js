@@ -17,21 +17,21 @@ function Step1({ name, setName, email, setEmail, phoneNumber, setPhoneNumber }) 
 
 
     return (
-        <section>
+        <section className="step1">
 
-            <h1>Personal Info</h1>
-            <span>Please provide your name, email address, and phone number.</span>
-            <div>
-                <label>Name</label>
-                <input type="text" placeholder={name} onChange={handleNameChange}></input>
+            <h1 className="step1__title">Personal info</h1>
+            <span className="step1__text">Please provide your name, email address, and phone number.</span>
+            <div className="step1__div">
+                <label className="step1__label">Name</label>
+                <input type="text" placeholder={name} onChange={handleNameChange} className="step1__input"></input>
             </div>
-            <div>
-                <label>Email Address</label>
-                <input type="text" placeholder={email} onChange={handleEmailChange}></input>
+            <div className="step1__div">
+                <label className="step1__label">Email Address</label>
+                <input type="text" placeholder={email} onChange={handleEmailChange} className="step1__input"></input>
             </div>
-            <div>
-                <label>Phone Number</label>
-                <input type="text" placeholder={phoneNumber} onChange={handlePhoneNumberChange}></input>
+            <div className="step1__div">
+                <label className="step1__label">Phone Number</label>
+                <input type="text" placeholder={phoneNumber} onChange={handlePhoneNumberChange} className="step1__input"></input>
             </div>
         </section>
     )
