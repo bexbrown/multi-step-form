@@ -4,7 +4,33 @@ import ArcadeIcon from "../../assets/icons/icon-arcade.svg";
 import AdvancedIcon from "../../assets/icons/icon-advanced.svg";
 import ProIcon from "../../assets/icons/icon-pro.svg";
 
-function Step2({ paymentSchedule, setPaymentSchedule, plan, setPlan }) {
+function Step2({ paymentSchedule, setPaymentSchedule, plan, setPlan, setPrice }) {
+
+    useEffect(() => {
+        if (paymentSchedule === "Monthly") {
+            if (plan === "Arcade") {
+                setPrice(9)
+            }
+            if (plan === "Advanced") {
+                setPrice(12)
+            }
+            if (plan === "Pro") {
+                setPrice(15)
+            }
+        }
+
+        if (paymentSchedule === "Yearly") {
+            if (plan === "Arcade") {
+                setPrice(90)
+            }
+            if (plan === "Advanced") {
+                setPrice(120)
+            }
+            if (plan === "Pro") {
+                setPrice(150)
+            }
+        }
+    })
 
     function handleArcadeClick() {
         setPlan("Arcade");
