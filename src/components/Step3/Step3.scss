@@ -1,0 +1,39 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colors" as *;
+
+.step3 {
+
+    &__text {
+        color: $secondary-text;
+        font-size: 0.7rem;
+    }
+
+    &__div {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid $primary-text;
+        border-radius: 5px;
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    &__checkbox {
+        accent-color: $primary-cta;
+    }
+
+    &__subtitle {
+        font-size: 0.75rem;
+        margin: 0;
+    }
+
+    &__subtext {
+        font-size: 0.7rem;
+        color: $secondary-text;
+    }
+
+    &__price {
+        color: $primary-cta;
+        font-size: 0.7rem;
+        align-self: center;
+    }
+}

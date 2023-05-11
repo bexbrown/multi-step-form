@@ -22,7 +22,7 @@
     }
 
     &__icon {
-        height: 1.5rem;
+        height: 1rem;
     }
 
     &__option {
@@ -33,7 +33,7 @@
         border: 1px solid $primary-text;
         border-radius: 5px;
         margin-bottom: 0.5rem;
-        padding: 0.75rem;
+        padding: 0.5rem;
 
         @include tablet {
             padding: 0.75rem;
