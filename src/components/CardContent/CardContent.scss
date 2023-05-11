@@ -1,0 +1,13 @@
+@use "../../styles/partials/mixins" as *;
+
+.content {
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 5px;
+    width: 20rem;
+    height: 27rem;
+
+    @include tablet {
+        padding: 0;
+    }
+}

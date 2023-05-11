@@ -1,0 +1,79 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+
+.step2 {
+
+    &__text {
+        color: $secondary-text;
+        font-size: 0.7rem;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    &__div {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__icon {
+        height: 1.5rem;
+    }
+
+    &__option {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: 1px solid $primary-text;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+        padding: 0.75rem;
+
+        @include tablet {
+            padding: 0.75rem;
+            width: 6rem;
+            height: 8rem;
+        }
+    }
+
+    &__selected {
+        background-color: $secondary-bg;
+    }
+
+    &__subtitle {
+        font-size: 0.75rem;
+        margin: 0;
+    }
+
+    &__price {
+        font-size: 0.6rem;
+        color: $secondary-text;
+        display: block;
+        margin: 0.25rem 0;
+    }
+
+    &__price--free {
+        color: $primary-text;
+    }
+
+    &__switch {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: $secondary-bg;
+        padding: 0.5rem;
+        font-size: 0.6rem;
+        font-weight: 700;
+        margin-top: 1rem;
+
+        @include tablet {
+            margin-top: 2rem;
+        }
+    }
+
+}

@@ -1,4 +1,10 @@
 @use "./styles/partials/fonts" as *;
+@use "./styles/partials/typography" as *;
+@use "./styles/partials/colors" as *;
+@use "./styles/partials/mixins" as *;
+
+
+
 
 *,
 *::before,
@@ -10,4 +16,10 @@ body {
     font-family: $font-stack;
     width: 100%;
     margin: 0;
+    color: $primary-text;
+
+    @include tablet {
+        background-color: $primary-bg;
+    }
+
 }

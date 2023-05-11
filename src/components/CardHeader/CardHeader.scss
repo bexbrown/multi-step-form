@@ -4,11 +4,16 @@
     background-image: url(../../assets/images/bg-sidebar-mobile.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    height: 10rem;
     color: #FFF;
     display: flex;
-    min-width: 100%;
+    z-index: -1;
 
     @include tablet {
+        position: relative;
         flex-direction: column;
         background-image: url(../../assets//images/bg-sidebar-desktop.svg);
         height: 100%;
