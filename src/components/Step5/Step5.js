@@ -1,12 +1,13 @@
 import "./Step5.scss";
+import ThankYouIcon from "../../assets/icons/icon-thank-you.svg";
 
 function Step5() {
     return (
-        <section>
+        <section className="step5">
 
-            <img alt="icon" href="" />
-            <h1>Thank You!</h1>
-            <span>Thank you for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</span>
+            <img alt="icon" src={ThankYouIcon} className="step5__icon" />
+            <h1 className="step5__title">Thank You!</h1>
+            <span className="step5__text">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</span>
         </section>
     )
 }

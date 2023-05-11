@@ -2,7 +2,7 @@
 @use "../../styles/partials/colors" as *;
 
 .card {
-    background-color: $primary-bg;
+    background-color: $secondary-bg;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,6 +20,7 @@
         min-width: 750px;
         padding: 1rem;
         background-color: #fff;
+        border-radius: 7px;
     }
 
     &__div {
