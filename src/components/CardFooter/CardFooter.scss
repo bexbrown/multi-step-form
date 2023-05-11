@@ -1,0 +1,36 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colors" as *;
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+
+
+    &__button {
+        height: 2rem;
+        padding: 0 1rem;
+        border: none;
+        font-weight: 700;
+        border-radius: 5px;
+        font-size: 0.6rem;
+    }
+
+    &__button--back {
+        background-color: $secondary-bg;
+        color: $secondary-text;
+
+
+        @include tablet {
+            background-color: #fff;
+
+        }
+    }
+
+    &__button--next {
+        background-color: $primary-text;
+        color: #fff;
+        margin-left: auto;
+    }
+}

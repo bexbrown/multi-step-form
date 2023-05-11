@@ -2,7 +2,7 @@
 @use "../../styles/partials/colors" as *;
 
 .card {
-    background-color: $secondary-bg;
+    background-color: $primary-bg;
     display: flex;
     flex-direction: column;
     justify-content: center;
