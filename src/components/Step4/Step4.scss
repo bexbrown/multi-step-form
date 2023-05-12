@@ -1,0 +1,78 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colors" as *;
+
+.step4 {
+
+    &__text {
+        color: $secondary-text;
+        font-size: 0.7rem;
+    }
+
+    &__div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $secondary-bg;
+        padding: 1rem;
+        border-bottom: 1px solid $primary-bg;
+        margin-top: 0.5rem;
+        border-radius: 5px 5px 0 0;
+    }
+
+    &__subtitle {
+        font-size: 0.75rem;
+        margin-bottom: 0rem;
+    }
+
+    &__price {
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+
+    &__change {
+        color: $secondary-text;
+        font-size: 0.7rem;
+        text-decoration: underline;
+    }
+
+    &__addons {
+        background-color: $secondary-bg;
+        padding: 0.5rem 1rem;
+        border-radius: 0 0 5px 5px;
+
+    }
+
+    &__addon--div {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 0;
+    }
+
+    &__addon {
+        font-size: 0.7rem;
+        color: $secondary-text;
+    }
+
+    &__addon--price {
+        color: $primary-text;
+        font-size: 0.7rem;
+    }
+
+    &__totals {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.7rem;
+        margin: 1rem;
+    }
+
+    &__total {
+        color: $secondary-text;
+
+    }
+
+    &__total--price {
+        color: $primary-cta;
+        font-weight: 700;
+    }
+
+}

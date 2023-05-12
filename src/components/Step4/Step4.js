@@ -36,39 +36,44 @@ function Step4({ paymentSchedule, plan, price, addOn1, addOn2, addOn3, setStep }
     let total = price + addOn1Price + addOn2Price + addOn3Price;
 
     return (
-        <section>
-            <h1>Finishing Up</h1>
-            <span>Double check everything looks OK before confirming.</span>
-            <div>
+        <section className="step4">
+            <h1 className="step4__title">Finishing Up</h1>
+            <span className="step4__text">Double check everything looks OK before confirming.</span>
+            <div className="step4__div">
                 <div>
-                    <h2>{plan} ({paymentSchedule})</h2>
-                    <span onClick={handleChangeClick}>Change</span>
+                    <h2 className="step4__subtitle">{plan} ({paymentSchedule})</h2>
+                    <span onClick={handleChangeClick} className="step4__change">Change</span>
                 </div>
-                {paymentSchedule === "Monthly" && <span>{price}/mo</span>}
-                {paymentSchedule === "Yearly" && <span>{price}/yr</span>}
+                {paymentSchedule === "Monthly" && <span className="step4__price">{price}/mo</span>}
+                {paymentSchedule === "Yearly" && <span className="step4__price">{price}/yr</span>}
 
             </div>
-            <div>
-                {addOn1 && <div>
-                    <span>Online Service</span>
-                    <span>{addOn1Price}</span>
+            <div className="step4__addons">
+                {addOn1 && <div className="step4__addon--div">
+                    <span className="step4__addon">Online Service</span>
+                    {paymentSchedule === "Monthly" && <span className="step4__addon--price">+{addOn1Price}/mo</span>}
+                    {paymentSchedule === "Yearly" && <span className="step4__addon--price">+{addOn1Price}/yr</span>}
                 </div>}
-                {addOn2 && <div>
-                    <span>Larger Service</span>
-                    <span>{addOn2Price}</span>
+                {addOn2 && <div className="step4__addon--div">
+                    <span className="step4__addon">Larger Storage</span>
+                    {paymentSchedule === "Monthly" && <span className="step4__addon--price">+{addOn2Price}/mo</span>}
+                    {paymentSchedule === "Yearly" && <span className="step4__addon--price">+{addOn2Price}/yr</span>}
+
                 </div>}
-                {addOn3 && <div>
-                    <span>Customizable Profile</span>
-                    <span>{addOn3Price}</span>
+                {addOn3 && <div className="step4__addon--div">
+                    <span className="step4__addon">Customizable Profile</span>
+                    {paymentSchedule === "Monthly" && <span className="step4__addon--price">+{addOn3Price}/mo</span>}
+                    {paymentSchedule === "Yearly" && <span className="step4__addon--price">+{addOn3Price}/yr</span>}
+
                 </div>}
             </div>
-            <div>
-                {paymentSchedule === "Monthly" && <span>Total (per month)</span>}
-                {paymentSchedule === "Yearly" && <span>Total (per year)</span>}
-                {paymentSchedule === "Monthly" && <span>{total}/mo</span>}
-                {paymentSchedule === "Yearly" && <span>{total}/yr</span>}
+            <div className="step4__totals">
+                {paymentSchedule === "Monthly" && <span className="step4__total">Total (per month)</span>}
+                {paymentSchedule === "Yearly" && <span className="step4__total">Total (per year)</span>}
+                {paymentSchedule === "Monthly" && <span className="step4__total--price">+{total}/mo</span>}
+                {paymentSchedule === "Yearly" && <span className="step4__total--price">+{total}/yr</span>}
             </div>
-        </section>
+        </section >
     )
 }
 
