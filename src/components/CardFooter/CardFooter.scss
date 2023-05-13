@@ -9,6 +9,7 @@
 
     &__button {
         height: 2rem;
+        width: 5rem;
         padding: 0 1rem;
         border: none;
         font-weight: 700;
@@ -31,6 +32,11 @@
         background-color: $primary-text;
         color: #fff;
         margin-left: auto;
+    }
+
+    &__button--confirm {
+        color: #fff;
+        background-color: $primary-cta;
     }
 
     &__hidden {
