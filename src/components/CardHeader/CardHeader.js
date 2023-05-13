@@ -27,7 +27,7 @@ function CardHeader({ step }) {
                     <div className={step === 3 ? "header__outline--selected header__outline" : "header__outline"}>
                         <div className="header__number">3</div>
                     </div>
-                    <div className={step === 4 ? "header__outline--selected header__outline" : "header__outline"}>
+                    <div className={step === 4 || 5 ? "header__outline--selected header__outline" : "header__outline"}>
                         <div className="header__number">4</div>
                     </div>
                 </div>}
@@ -62,7 +62,7 @@ function CardHeader({ step }) {
                         </div>
                     </div>
                     <div className="header__row">
-                        <div className={step === 4 ? "header__outline--selected header__outline" : "header__outline"}>
+                        <div className={step === 4 || 5 ? "header__outline--selected header__outline" : "header__outline"}>
                             <div className="header__number">4</div>
                         </div>
                         <div className="header__text">
