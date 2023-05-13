@@ -1,25 +1,69 @@
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colors" as *;
 
 .header {
-    background-image: url(../../assets/images/bg-sidebar-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    height: 10rem;
+    height: 100%;
     color: #FFF;
-    display: flex;
-    z-index: -1;
 
-    @include tablet {
+    &__div--mobile {
+        background-image: url(../../assets/images/bg-sidebar-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 10rem;
+        width: 100%;
+        display: flex;
+        z-index: -1;
+        justify-content: space-evenly;
+        padding-top: 2.5rem;
+    }
+
+    &__div--tablet {
+        display: flex;
         position: relative;
         flex-direction: column;
         background-image: url(../../assets//images/bg-sidebar-desktop.svg);
         height: 100%;
         background-position: left;
         background-size: contain;
+        background-repeat: no-repeat;
         min-width: 20rem;
+    }
 
+    &__row {
+        display: flex;
+        padding-left: 2rem;
+        margin: 1rem 0;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+
+    &__text--about {
+        font-weight: 700;
+    }
+
+    &__outline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FFF;
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    &__outline--selected {
+        background-color: $secondary-cta;
+        color: #000;
+        border: 1px solid $secondary-cta;
     }
 }
