@@ -94,6 +94,10 @@ function Step2({ paymentSchedule, setPaymentSchedule, plan, setPlan, setPrice })
             </div>
             <div className="step2__switch">
                 <span onClick={handleMonthlyClick} className="step2__toggle--text">Monthly</span>
+                <div className="step2__toggle">
+                    {paymentSchedule === "Monthly" && <div className="step2__toggle--monthly"></div>}
+                    {paymentSchedule === "Yearly" && <div className="step2__toggle--yearly"></div>}
+                </div>
                 <span onClick={handleYearlyClick} className="step2__toggle-text--text">Yearly</span>
             </div>
         </section >
