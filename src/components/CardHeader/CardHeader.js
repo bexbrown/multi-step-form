@@ -39,7 +39,7 @@ function CardHeader({ step }) {
                             <span className="header__number">1</span>
                         </div>
                         <div className="header__text">
-                            <span>Step 1</span>
+                            <span className="header__text--step">Step 1</span>
                             <span className="header__text--about">Your info</span>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ function CardHeader({ step }) {
                             <span className="header__number">2</span>
                         </div>
                         <div className="header__text">
-                            <span>Step 2</span>
+                            <span className="header__text--step">Step 2</span>
                             <span className="header__text--about">Select plan</span>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ function CardHeader({ step }) {
                             <span className="header__number">3</span>
                         </div>
                         <div className="header__text">
-                            <span>Step 3</span>
+                            <span className="header__text--step">Step 3</span>
                             <span className="header__text--about">Add-ons</span>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ function CardHeader({ step }) {
                             <div className="header__number">4</div>
                         </div>
                         <div className="header__text">
-                            <div>Step 4</div>
+                            <div className="header__text--step">Step 4</div>
                             <div className="header__text--about">Summary</div>
                         </div>
                     </div>

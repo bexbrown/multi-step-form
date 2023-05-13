@@ -47,6 +47,11 @@
         text-transform: uppercase;
     }
 
+    &__text--step {
+        font-size: 0.6rem;
+        color: $secondary-text;
+    }
+
     &__text--about {
         font-weight: 700;
     }

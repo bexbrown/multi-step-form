@@ -17,6 +17,10 @@
         margin: 0.5rem 0;
     }
 
+    &__div--selected {
+        background-color: $secondary-bg;
+    }
+
     &__checkbox {
         accent-color: $primary-cta;
     }
